@@ -33,6 +33,11 @@ CI/CD pipeline
 ### 5. 파이프라인 생성에 성공하였으면 Build Now 버튼을 눌러 빌드를 실행합니다.
 
 
+#### docker push 중 denied: requested access to the resource is denied 다음과 같은오류가 발생하였다... 현재 ing 중
+![image](https://user-images.githubusercontent.com/79193811/203500409-0bdedfdf-3cbc-4d48-837d-fcfe8b9ca035.png)
+
+
+
 #### Reference site
 
 * https://junhyunny.github.io/information/jenkins/github/jenkins-github-webhook/
