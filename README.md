@@ -35,7 +35,7 @@ CI/CD pipeline
 * docker push 중 denied: requested access to the resource is denied 다음과 같은오류가 발생하였다... 현재 ing 중
 ![image](https://user-images.githubusercontent.com/79193811/203500409-0bdedfdf-3cbc-4d48-837d-fcfe8b9ca035.png)
 
-* 해결방안
+### 해결방안
 * docker login -u "kimminwoo1234" -p "alsdn1991!" docker.io 해당하는명령어를 입력해주면 정상적으로 작동 !
 ![image](https://user-images.githubusercontent.com/79193811/203733032-69d1058e-fb79-4f32-a05f-62de6f606aa2.png)
 
