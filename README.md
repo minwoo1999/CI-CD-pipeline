@@ -39,6 +39,11 @@ CI/CD pipeline
 * docker login -u "아이디" -p "비번!" docker.io 해당하는명령어를 입력해주면 정상적으로 작동 !
 ![image](https://user-images.githubusercontent.com/79193811/203733032-69d1058e-fb79-4f32-a05f-62de6f606aa2.png)
 
+### docker run
+
+![image](https://user-images.githubusercontent.com/79193811/203899923-7e396d2c-ad3e-4915-8f96-c0817b2e2d75.png)
+
+
 
 
 ### CI/CD WorkFlow Ver 1.0은 다음과 같습니다
