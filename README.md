@@ -46,7 +46,7 @@ CI/CD pipeline
 
 
 
-### CI/CD WorkFlow Ver 1.0은 다음과 같습니다
+### CI/CD WorkFlow Ver 1.0은 다음과 같습니다.
 
 * 깃허브 main 브랜치에 변경사항 발생
 * 깃허브가 웹훅을 Jenkins 서버에 전달
