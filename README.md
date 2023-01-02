@@ -1,6 +1,7 @@
 # CI-CD-pipeline
 CI/CD pipeline 
-![image](https://user-images.githubusercontent.com/79193811/203499552-8bca4bd2-36b4-4d81-88f8-f7233e1a6604.png)
+![image](https://user-images.githubusercontent.com/79193811/210244664-0ae8f217-7be6-4fd7-a1d6-296ab1cfc779.png)
+
 
 ### 1.GitHub access token 생성
 
