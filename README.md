@@ -3,6 +3,18 @@ CI/CD pipeline
 ![image](https://user-images.githubusercontent.com/79193811/210244664-0ae8f217-7be6-4fd7-a1d6-296ab1cfc779.png)
 
 
+### CI/CD WorkFlow Ver 1.0은 다음과 같습니다.
+
+* 깃허브 main 브랜치에 변경사항 발생
+* 깃허브가 웹훅을 Jenkins 서버에 전달
+* Jenkins 서버는 main 브랜치를 pull 받아 gradle을 통해 test 및 build 명령 실행
+* Gradle이 test 및 build 수행 후 Jar 파일 생성
+* 생성된 Jar 파일을 Docker image로 build
+* 생성된 Docker image를 Dockerhub로 전송
+* Jenkins가 SSH를 통해 API 서버가 존재하는 EC2 Instance에 접속, SSH 상에서 Dockerhub를 통해 image를 pull
+* 계속해서 SSH 상에서 Docker를 통해 컨테이너 실행
+
+
 ### 1.GitHub access token 생성
 
 
@@ -40,25 +52,12 @@ CI/CD pipeline
 * docker login -u "아이디" -p "비번!" docker.io 해당하는명령어를 입력해주면 정상적으로 작동 !
 ![image](https://user-images.githubusercontent.com/79193811/203733032-69d1058e-fb79-4f32-a05f-62de6f606aa2.png)
 
-### docker run
+### 6. docker run
 
 ![image](https://user-images.githubusercontent.com/79193811/211968813-5a54fd5d-1302-4d2a-89b2-b6078234d3f4.png)
 
 
-
-
-### CI/CD WorkFlow Ver 1.0은 다음과 같습니다.
-
-* 깃허브 main 브랜치에 변경사항 발생
-* 깃허브가 웹훅을 Jenkins 서버에 전달
-* Jenkins 서버는 main 브랜치를 pull 받아 gradle을 통해 test 및 build 명령 실행
-* Gradle이 test 및 build 수행 후 Jar 파일 생성
-* 생성된 Jar 파일을 Docker image로 build
-* 생성된 Docker image를 Dockerhub로 전송
-* Jenkins가 SSH를 통해 API 서버가 존재하는 EC2 Instance에 접속, SSH 상에서 Dockerhub를 통해 image를 pull
-* 계속해서 SSH 상에서 Docker를 통해 컨테이너 실행
-
-### Slack 연동하여 성공여부 확인
+### 7. Slack 연동하여 성공여부 확인
 
 ![image](https://user-images.githubusercontent.com/79193811/211968867-397d3785-6dda-4a78-890b-56a5a55e758f.png)
 
