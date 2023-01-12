@@ -42,7 +42,7 @@ CI/CD pipeline
 
 ### docker run
 
-![image](https://user-images.githubusercontent.com/79193811/203899923-7e396d2c-ad3e-4915-8f96-c0817b2e2d75.png)
+![image](https://user-images.githubusercontent.com/79193811/211968813-5a54fd5d-1302-4d2a-89b2-b6078234d3f4.png)
 
 
 
@@ -57,6 +57,11 @@ CI/CD pipeline
 * 생성된 Docker image를 Dockerhub로 전송
 * Jenkins가 SSH를 통해 API 서버가 존재하는 EC2 Instance에 접속, SSH 상에서 Dockerhub를 통해 image를 pull
 * 계속해서 SSH 상에서 Docker를 통해 컨테이너 실행
+
+### Slack 연동하여 성공여부 확인
+
+![image](https://user-images.githubusercontent.com/79193811/211968867-397d3785-6dda-4a78-890b-56a5a55e758f.png)
+
 
 
 #### Reference site
