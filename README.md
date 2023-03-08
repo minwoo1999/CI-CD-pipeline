@@ -49,7 +49,7 @@ CI/CD pipeline
 ![image](https://user-images.githubusercontent.com/79193811/203500409-0bdedfdf-3cbc-4d48-837d-fcfe8b9ca035.png)
 
 ### 해결방안
-* docker login -u "아이디" -p "비번!" docker.io 해당하는명령어를 입력해주면 정상적으로 작동 !
+* CI에서 도중에 발생하는 경고 또한 오류로 처리를 해버리는 Default 설정을 발견. 블로그를 검색한 결과 process.env.CI=True에서 False 변경 후 성공
 ![image](https://user-images.githubusercontent.com/79193811/203733032-69d1058e-fb79-4f32-a05f-62de6f606aa2.png)
 
 ### 6. docker run
